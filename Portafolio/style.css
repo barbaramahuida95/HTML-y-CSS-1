@@ -5,27 +5,23 @@ body{
     height: 100vh;
     box-sizing: border-box;
 }
-strong {
-        
-}
 
 .presentacion-BMS{
     display:flex;
     align-items: center;
-    margin: 10%;
+    margin: 10% 15%;
     justify-content: space-between;
 }
 
 .destacar-titulo{
     color: greenyellow;
 }
-a{
-    background-color: greenyellow;
-    color :black
-}
 
 .presentacion-BMS-contenido{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .presentacion-BMS-contenido-titulo{
