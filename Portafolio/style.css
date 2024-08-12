@@ -37,3 +37,21 @@ a{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
 }
+
+.presentacion-BMS-botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentacion-BMS-botones-link{
+    width: 280px; 
+    background-color: greenyellow;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 16px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color :black
+}
