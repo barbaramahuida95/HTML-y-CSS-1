@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body{
     background-color: black;
-    color: green;
+    color: #e8d4f3;
     height: 100vh;
     box-sizing: border-box;
 }
@@ -11,17 +11,21 @@ body{
     align-items: center;
     margin: 10% 15%;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .destacar-titulo{
-    color: greenyellow;
+    color: #5430c6;
 }
 
 .presentacion-BMS-contenido{
     width: 615px;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: column; /*Al agregar la propiedad flex-direction: column, los cuadrados se posicionan verticalmente, 
+    ya que define que la dirección del display: flex debe ser en "columna".*/
+    gap: 10px;
+    flex: 1; /* El contenido ocupa todo el espacio disponible */
+    order: 1; /* Asegura que el texto esté a la izquierda */
 }
 
 .presentacion-BMS-contenido-titulo{
@@ -30,6 +34,7 @@ body{
 }
 
 .presentacion-BMS-contenido-parrafo{
+    flex: 1;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
 }
@@ -37,17 +42,34 @@ body{
 .presentacion-BMS-botones{
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
 }
 
 .presentacion-BMS-botones-link{
-    width: 280px; 
-    background-color: greenyellow;
+    width: 378px; 
     text-align: center;
     padding: 21.5px 0;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     text-decoration: none;
-    color :black
+    color :#e8d4f3;
+    border: 2px solid #5430c6;
+}
+
+.presentacion-BMS-img {
+    width: 400px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantén las proporciones */
+    flex-shrink: 0; /* Evita que la imagen se encoja si el contenedor es pequeño */
+    border-radius: 16px; /* Bordes redondeados, opcional */
+    order: 2; /* Asegura que la imagen esté a la derecha */
+}
+
+.presentacion-BMS-botones-subtitulo {
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
 }
