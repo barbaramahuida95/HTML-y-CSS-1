@@ -3,14 +3,35 @@ body{
     background-color: black;
     color: #e8d4f3;
     box-sizing: border-box;
+    text-align: center;
 }
 
-.presentacion-BMS{
+.header{
+    padding-top: 2% 0% 0% 15%;
     display:flex;
     align-items: center;
-    margin: 10% 15%;
     justify-content: space-between;
-    gap: 30px;
+}
+
+.header-menu{
+    display: flex;
+    gap: 80px;
+}
+
+.header-menu-link{
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.presentacion-BMS{
+    padding: 6% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .destacar-titulo{
@@ -25,17 +46,20 @@ body{
     gap: 10px;
     flex: 1; /* El contenido ocupa todo el espacio disponible */
     order: 1; /* Asegura que el texto esté a la izquierda */
+    text-align: center;
 }
 
 .presentacion-BMS-contenido-titulo{
     font-size: 36px;
     font-family: "Krona One", sans-serif;
+    text-align: center;
 }
 
 .presentacion-BMS-contenido-parrafo{
     flex: 1;
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 .presentacion-BMS-botones{
@@ -88,4 +112,17 @@ body{
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
+}
+
+.presentacion-BMS-contenido-parrafo-b{
+    flex: 1;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+.presentacion-BMS-contenido-subtitulo{
+    font-size: 24px;
+    font-family: "Krona One", sans-serif;
+    text-align: center;
 }
