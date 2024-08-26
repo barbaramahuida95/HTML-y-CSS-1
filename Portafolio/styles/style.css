@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:black;
+    --color-secundario:#e8d4f3;
+    --color-terciario:#5430c6;
+    --color-cuaternario:#272727;
+
+
+    --fuente-montserrat:"Montserrat", sans-serif;
+    --fuente-krona:"Krona One", sans-serif;
+
+}
+
 body{
-    background-color: black;
-    color: #e8d4f3;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
     box-sizing: border-box;
     text-align: center;
 }
@@ -19,7 +32,7 @@ body{
 }
 
 .header-menu-link{
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-size: 24px;
     font-weight: 600;
     text-decoration: none;
@@ -35,7 +48,7 @@ body{
 }
 
 .destacar-titulo{
-    color: #5430c6;
+    color: var(--color-terciario);
 }
 
 .presentacion-BMS-contenido{
@@ -51,14 +64,14 @@ body{
 
 .presentacion-BMS-contenido-titulo{
     font-size: 36px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     text-align: center;
 }
 
 .presentacion-BMS-contenido-parrafo{
     flex: 1;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     text-align: center;
 }
 
@@ -76,18 +89,18 @@ body{
     padding: 21.5px 0;
     border-radius: 8px;
     font-size: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-weight: 600;
     text-decoration: none;
-    color :#e8d4f3;
-    border: 2px solid #5430c6;
+    color : var(--color-secundario);
+    border: 2px solid var(--color-terciario);
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
 .presentacion-BMS-botones-link:hover{
-    background-color: #272727;
+    background-color: var(--color-cuaternario);
     font-size: 30px;
 }
 
@@ -101,28 +114,28 @@ body{
 
 .presentacion-BMS-botones-subtitulo {
     font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     font-weight: 400;
 }
 
 .footer{
-    background-color: #5430c6;
+    background-color: var(--color-terciario);
     padding: 24px;
-    color: black;
+    color: var(--color-primario);
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     font-weight: 600;
 }
 
 .presentacion-BMS-contenido-parrafo-b{
     flex: 1;
     font-size: 15px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fuente-montserrat);
     text-align: center;
 }
 
 .presentacion-BMS-contenido-subtitulo{
     font-size: 24px;
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fuente-krona);
     text-align: center;
 }
