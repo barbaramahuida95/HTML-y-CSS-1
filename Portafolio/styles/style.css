@@ -33,7 +33,7 @@ body{
 
 .header-menu-link{
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -44,7 +44,8 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
+    text-align: justify;
+    gap:82px;
 }
 
 .destacar-titulo{
@@ -52,27 +53,26 @@ body{
 }
 
 .presentacion-BMS-contenido{
-    width: 615px;
+    width: 50%;
     display: flex;
-    flex-direction: column; /*Al agregar la propiedad flex-direction: column, los cuadrados se posicionan verticalmente, 
-    ya que define que la dirección del display: flex debe ser en "columna".*/
+    flex-direction: column; 
     gap: 10px;
-    flex: 1; /* El contenido ocupa todo el espacio disponible */
-    order: 1; /* Asegura que el texto esté a la izquierda */
-    text-align: center;
+    flex: 1;     
+    order: 1;     
+    text-align: justify; 
 }
 
 .presentacion-BMS-contenido-titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--fuente-krona);
-    text-align: center;
+    text-align: justify; 
 }
 
 .presentacion-BMS-contenido-parrafo{
     flex: 1;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
-    text-align: center;
+    text-align: justify; 
 }
 
 .presentacion-BMS-botones{
@@ -84,11 +84,11 @@ body{
 }
 
 .presentacion-BMS-botones-link{
-    width: 378px; 
+    width: 50%; 
     text-align: center;
     padding: 21.5px 0;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
     font-weight: 600;
     text-decoration: none;
@@ -101,26 +101,22 @@ body{
 
 .presentacion-BMS-botones-link:hover{
     background-color: var(--color-cuaternario);
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 .presentacion-BMS-img {
-    width: 400px; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantén las proporciones */
-    flex-shrink: 0; /* Evita que la imagen se encoja si el contenedor es pequeño */
-    border-radius: 16px; /* Bordes redondeados, opcional */
-    order: 2; /* Asegura que la imagen esté a la derecha */
+    width: 50%;
 }
 
 .presentacion-BMS-botones-subtitulo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-krona);
     font-weight: 400;
 }
 
 .footer{
     background-color: var(--color-terciario);
-    padding: 24px;
+    padding: 1.5rem;
     color: var(--color-primario);
     text-align: center;
     font-family: var(--fuente-montserrat);
@@ -129,13 +125,32 @@ body{
 
 .presentacion-BMS-contenido-parrafo-b{
     flex: 1;
-    font-size: 15px;
+    font-size: 1rem;
     font-family: var(--fuente-montserrat);
-    text-align: center;
+    text-align: justify; 
 }
 
 .presentacion-BMS-contenido-subtitulo{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-krona);
-    text-align: center;
+    text-align: justify; 
+}
+
+@media (max-width:1100px){
+
+    .header {
+        padding: 10%;
+    }
+
+    .header-menu{
+        justify-content: center;
+    }
+
+    .presentacion-BMS{
+        flex-direction: column;
+    }
+
+    .presentacion-BMS-contenido{
+        width: auto;
+    }
 }
